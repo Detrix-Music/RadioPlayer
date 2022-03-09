@@ -1,17 +1,12 @@
 import "./App.scss";
-import Radio from "./Pages/Radio/Radio";
-import Home from "./Pages/Home/Home";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Radio from "./Radio";
 
 function App() {
   return (
     <div className="App">
-      <Router>
-        <Routes>
-          <Route exact path="/" element={<Home />} />
-          <Route exact path="/Radio" element={<Radio />} />
-        </Routes>
-      </Router>
+      <h1>Super-Duper Radio Player</h1>
+      <h2>Pick a genre, choose a station, start listening</h2>
+      <Radio />
     </div>
   );
 }
